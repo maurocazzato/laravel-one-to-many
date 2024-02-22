@@ -19,7 +19,6 @@ class ProjectFactory extends Factory
             return [
                 'name' => fake()->word(),
                 'description' => fake()->sentence(),
-                'type_id' => Type::factory(),
             ];
         
     }
