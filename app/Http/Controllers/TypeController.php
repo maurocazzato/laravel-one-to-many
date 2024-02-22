@@ -9,7 +9,8 @@ use Illuminate\Http\Request;
 class TypeController extends Controller
 {
     public function index() {
-        $types = Type::with('projects')->get();
+        $types = Type:: all();
+        
         return view('types.index', compact('types'));
     }
 }

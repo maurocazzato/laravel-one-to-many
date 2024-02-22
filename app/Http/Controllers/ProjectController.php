@@ -9,7 +9,8 @@ use App\Models\Project;
 class ProjectController extends Controller
 {
     public function index() {
-        $projects = Project::with('type')->get();
+        $projects = Project :: all();
+        
         return view('projects.index', compact('projects'));
     }
 }
